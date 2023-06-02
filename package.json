@@ -1,7 +1,8 @@
 {
   "name": "md-file-tree",
   "version": "0.2.0",
-  "author": "Michał Budzyński <michal@virtualdesign.pl>",
+  "prettier": "@oppentech/prettier-config",
+  "author": "Michał Budzyński <michal@virtualdesign.pl>, Jichen Zhang <jichenzhang@outlook.com>",
   "repository": "git@github.com:michalbe/md-file-tree.git",
   "bin": {
     "md-file-tree": "./index.js"
@@ -10,9 +11,14 @@
     "lint": "jshint ."
   },
   "dependencies": {
-    "event-state": "^0.3.5"
+    "commander": "^10.0.1",
+    "micromatch": "^4.0.5"
   },
   "devDependencies": {
+    "@oppentech/prettier-config": "^1.0.2",
+    "@types/micromatch": "^4.0.2",
+    "@types/node": "^20.2.5",
+    "event-state": "^0.3.5",
     "jshint": "^2.10.2"
   }
 }
